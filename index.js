@@ -12,6 +12,7 @@ while (condition) {
     if (answer.sentence !== '')
         condition = false;
 }
+//   my    name
 let sep = answer.sentence.split(" ");
 let newArr = [];
 sep.forEach((word) => {
@@ -21,7 +22,9 @@ sep.forEach((word) => {
 });
 if (newArr.length === 1) {
     console.log(chalk.green(`there is only ${newArr.length} word in the sentence`));
+    console.log(chalk.green(`${newArr.join(" ")}`));
 }
 else {
     console.log(chalk.green(`there are ${newArr.length} words in the sentence`));
+    console.log(chalk.green(`${newArr.join(" ")}`));
 }
